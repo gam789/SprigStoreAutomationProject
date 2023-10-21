@@ -3,6 +3,8 @@ package test.store.sprig;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -20,7 +22,7 @@ public class CreateLoginPageTest extends BaseClass{
 		CreateLoginPage lp = new CreateLoginPage(driver);
 		lp.loginFromHomeClick();
 		lp.createAnAccountClick();
-		lp.setValuesForCreateAccount("Peter", "Lapm", "peterlapm@gmail.com", "123@peter");
+		lp.setValuesForCreateAccount("Peter", "Honda", "peterhonda@gmail.com", "123@peter");
 		lp.submit();
 		
 		String actualTitle = driver.getTitle();
@@ -115,11 +117,14 @@ public class CreateLoginPageTest extends BaseClass{
 	
 	//TESTCASE 5
 	@Test
-	public void loginButtontextValidation() {
+	public void loginButtontextValidation() throws Exception {
 		test = extent.createTest("Login button text validation");
 		
 		CreateLoginPage lp = new CreateLoginPage(driver);
+		
 		lp.loginFromHomeClick();
+		lp.scrollToElement();
+		Thread.sleep(6000);
 		
 		String actualLoginButtonText = lp.loginButton.getText();
 		String expectedLoginButtonText = "Log in";
@@ -128,17 +133,65 @@ public class CreateLoginPageTest extends BaseClass{
 	}
 	
 	//TESTCASE 5
-		@Test
-		public void createAnAccountButtontextValidation() {
-			test = extent.createTest("Create an account button text validation");
-			
-			CreateLoginPage lp = new CreateLoginPage(driver);
-			lp.scrollToElement(lp.loginButton);
-			lp.loginFromHomeClick();
-			String actualLoginButtonText = lp.loginButton.getText();
-			String expectedLoginButtonText = "Create an Account";
-			
-			Assert.assertEquals(actualLoginButtonText, expectedLoginButtonText);
+	@Test
+	public void createAnAccountButtontextValidation() {
+		test = extent.createTest("Create an account button text validation");
+				
+		CreateLoginPage lp = new CreateLoginPage(driver);
+		lp.loginFromHomeClick();
+		lp.scrollToElement();
+		
+		String actualLoginButtonText = lp.loginButton.getText();
+		String expectedLoginButtonText = "Create an Account";
+				
+		Assert.assertEquals(actualLoginButtonText, expectedLoginButtonText);
 		}
+	
+	//TESTCASE 6
+	@Test
+	public void submitButtontextValidation() throws Exception {
+		test = extent.createTest("Submit button text validation");
+		
+		CreateLoginPage lp = new CreateLoginPage(driver);
+		lp.loginFromHomeClick();
+		
+		
+		lp.createAnAccountClick();
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		js.executeScript("window.scrollBy(0,600)", "");
+		String actualSubmitbuttontext = lp.submitButton.getText();
+		String expectedSubmitbuttontext = "Submit";
+		
+		Assert.assertEquals(actualSubmitbuttontext, expectedSubmitbuttontext);
+	}
+	
+	
+	//TESTCASE 7
+	@Test
+	public void signinOptionsLinkValidation() {
+		test = extent.createTest("Signin link validation");
+		CreateLoginPage lp = new CreateLoginPage(driver);
+		
+		lp.loginFromHomeClick();
+		lp.createAnAccountClick();
+		lp.signLinksValid();
+	}
+	
+	
+	//TESTCASE 8
+	@Test
+	
+	public void forgotPassword() {
+		test = extent.createTest("Forgot password validation");
+		CreateLoginPage lp = new CreateLoginPage(driver);
+		
+		lp.loginFromHomeClick();
+		lp.forgotPasswordClick();
+		lp.emailEnter("gibialex977@gmail.com");
+		lp.submitRecoveryEmail();
+		
+		Boolean s = lp.successMessage.isDisplayed();
+		Assert.assertEquals(s, true);
+	}
 
 }
