@@ -1,78 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-24T19:48:12 IST" name="Default suite" finished-at="2023-10-24T19:49:17 IST" duration-ms="64700">
+  <suite started-at="2023-10-24T23:52:18 IST" name="Default suite" finished-at="2023-10-24T23:53:03 IST" duration-ms="44667">
     <groups>
     </groups>
-    <test started-at="2023-10-24T19:48:12 IST" name="Default test" finished-at="2023-10-24T19:49:17 IST" duration-ms="64700">
-      <class name="test.store.sprig.ShoppingCartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:48:12 IST" name="setUp" finished-at="2023-10-24T19:48:16 IST" duration-ms="3940" status="PASS">
+    <test started-at="2023-10-24T23:52:18 IST" name="Default test" finished-at="2023-10-24T23:53:03 IST" duration-ms="44667">
+      <class name="test.store.sprig.CheckoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.store.sprig.CheckoutTest@128d2484]" started-at="2023-10-24T23:52:18 IST" name="setUp" finished-at="2023-10-24T23:52:22 IST" duration-ms="4286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:48:16 IST" name="urlLoading" finished-at="2023-10-24T19:48:23 IST" duration-ms="7043" status="PASS">
+        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.CheckoutTest@128d2484]" started-at="2023-10-24T23:52:22 IST" name="urlLoading" finished-at="2023-10-24T23:52:28 IST" duration-ms="5893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLoading -->
-        <test-method signature="continueShoppingButtonCheck()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:48:23 IST" name="continueShoppingButtonCheck" finished-at="2023-10-24T19:48:40 IST" duration-ms="16435" status="PASS">
+        <test-method signature="checkoutTest()[pri:0, instance:test.store.sprig.CheckoutTest@128d2484]" started-at="2023-10-24T23:52:28 IST" name="checkoutTest" finished-at="2023-10-24T23:53:02 IST" duration-ms="33913" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- continueShoppingButtonCheck -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:48:40 IST" name="afterMethod" finished-at="2023-10-24T19:48:40 IST" duration-ms="21" status="PASS">
+        </test-method> <!-- checkoutTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.CheckoutTest@128d2484]" started-at="2023-10-24T23:53:02 IST" name="afterMethod" finished-at="2023-10-24T23:53:02 IST" duration-ms="13" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=continueShoppingButtonCheck status=SUCCESS method=ShoppingCartTest.continueShoppingButtonCheck()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e] output={null}]]]>
+                <![CDATA[[TestResult name=checkoutTest status=SUCCESS method=CheckoutTest.checkoutTest()[pri:0, instance:test.store.sprig.CheckoutTest@128d2484] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:48:40 IST" name="urlLoading" finished-at="2023-10-24T19:48:44 IST" duration-ms="3870" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLoading -->
-        <test-method signature="proceedToCheckout()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:48:44 IST" name="proceedToCheckout" finished-at="2023-10-24T19:49:00 IST" duration-ms="16446" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- proceedToCheckout -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:49:00 IST" name="afterMethod" finished-at="2023-10-24T19:49:00 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=proceedToCheckout status=SUCCESS method=ShoppingCartTest.proceedToCheckout()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:49:00 IST" name="urlLoading" finished-at="2023-10-24T19:49:05 IST" duration-ms="4821" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLoading -->
-        <test-method signature="quantityIncreaseCheck()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:49:05 IST" name="quantityIncreaseCheck" finished-at="2023-10-24T19:49:16 IST" duration-ms="11301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quantityIncreaseCheck -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:49:16 IST" name="afterMethod" finished-at="2023-10-24T19:49:16 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=quantityIncreaseCheck status=SUCCESS method=ShoppingCartTest.quantityIncreaseCheck()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:49:16 IST" name="tearDown" finished-at="2023-10-24T19:49:17 IST" duration-ms="731" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.store.sprig.CheckoutTest@128d2484]" started-at="2023-10-24T23:53:02 IST" name="tearDown" finished-at="2023-10-24T23:53:03 IST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.store.sprig.ShoppingCartTest -->
+      </class> <!-- test.store.sprig.CheckoutTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

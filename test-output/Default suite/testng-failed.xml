@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.store.sprig.ShoppingCartTest">
+      <class name="test.store.sprig.CheckoutTest">
         <methods>
           <include name="urlLoading"/>
           <include name="tearDown"/>
+          <include name="checkoutTest"/>
           <include name="setUp"/>
           <include name="afterMethod"/>
-          <include name="proceedToCheckout"/>
         </methods>
-      </class> <!-- test.store.sprig.ShoppingCartTest -->
+      </class> <!-- test.store.sprig.CheckoutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
