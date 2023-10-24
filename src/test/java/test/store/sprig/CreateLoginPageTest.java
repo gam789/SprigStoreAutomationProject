@@ -3,7 +3,6 @@ package test.store.sprig;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
