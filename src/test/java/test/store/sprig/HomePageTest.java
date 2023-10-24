@@ -64,8 +64,8 @@ public class HomePageTest extends BaseClass{
 		HomePage h = new HomePage(driver);
 		h.subscribeToNewsLetterCheck("abc@gmail.com");
 		
-		String actaulSubscribeTitle = driver.getTitle();
-		Assert.assertEquals(actaulSubscribeTitle, "Subscription success");
+		String actualSubscribeTitle = driver.getTitle();
+		Assert.assertEquals(actualSubscribeTitle, "Subscription success");
 		
 	}
 	

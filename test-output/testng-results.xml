@@ -1,223 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-24T12:32:44 IST" name="Default suite" finished-at="2023-10-24T12:34:03 IST" duration-ms="78677">
+  <suite started-at="2023-10-24T19:48:12 IST" name="Default suite" finished-at="2023-10-24T19:49:17 IST" duration-ms="64700">
     <groups>
     </groups>
-    <test started-at="2023-10-24T12:32:44 IST" name="Default test" finished-at="2023-10-24T12:34:03 IST" duration-ms="78677">
-      <class name="test.store.sprig.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:32:45 IST" name="setUp" finished-at="2023-10-24T12:32:49 IST" duration-ms="4559" status="PASS">
+    <test started-at="2023-10-24T19:48:12 IST" name="Default test" finished-at="2023-10-24T19:49:17 IST" duration-ms="64700">
+      <class name="test.store.sprig.ShoppingCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:48:12 IST" name="setUp" finished-at="2023-10-24T19:48:16 IST" duration-ms="3940" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:32:49 IST" name="urlLoading" finished-at="2023-10-24T12:32:57 IST" duration-ms="7654" status="PASS">
+        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:48:16 IST" name="urlLoading" finished-at="2023-10-24T19:48:23 IST" duration-ms="7043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLoading -->
-        <test-method signature="addToCart()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:32:57 IST" name="addToCart" finished-at="2023-10-24T12:33:23 IST" duration-ms="26048" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Checkout - Sprig] but found [checkout]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Checkout - Sprig] but found [checkout]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at test.store.sprig.HomePageTest.addToCart(HomePageTest.java:81)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="continueShoppingButtonCheck()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:48:23 IST" name="continueShoppingButtonCheck" finished-at="2023-10-24T19:48:40 IST" duration-ms="16435" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addToCart -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:23 IST" name="afterMethod" finished-at="2023-10-24T12:33:23 IST" duration-ms="235" status="PASS">
+        </test-method> <!-- continueShoppingButtonCheck -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:48:40 IST" name="afterMethod" finished-at="2023-10-24T19:48:40 IST" duration-ms="21" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addToCart status=FAILURE method=HomePageTest.addToCart()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf] output={null}]]]>
+                <![CDATA[[TestResult name=continueShoppingButtonCheck status=SUCCESS method=ShoppingCartTest.continueShoppingButtonCheck()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:23 IST" name="urlLoading" finished-at="2023-10-24T12:33:27 IST" duration-ms="3671" status="PASS">
+        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:48:40 IST" name="urlLoading" finished-at="2023-10-24T19:48:44 IST" duration-ms="3870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLoading -->
-        <test-method signature="category()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:27 IST" name="category" finished-at="2023-10-24T12:33:33 IST" duration-ms="6161" status="PASS">
+        <test-method signature="proceedToCheckout()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:48:44 IST" name="proceedToCheckout" finished-at="2023-10-24T19:49:00 IST" duration-ms="16446" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- category -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:33 IST" name="afterMethod" finished-at="2023-10-24T12:33:33 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- proceedToCheckout -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:49:00 IST" name="afterMethod" finished-at="2023-10-24T19:49:00 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=category status=SUCCESS method=HomePageTest.category()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf] output={null}]]]>
+                <![CDATA[[TestResult name=proceedToCheckout status=SUCCESS method=ShoppingCartTest.proceedToCheckout()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:33 IST" name="urlLoading" finished-at="2023-10-24T12:33:37 IST" duration-ms="4288" status="PASS">
+        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:49:00 IST" name="urlLoading" finished-at="2023-10-24T19:49:05 IST" duration-ms="4821" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLoading -->
-        <test-method signature="homePageLogoPresent()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:37 IST" name="homePageLogoPresent" finished-at="2023-10-24T12:33:38 IST" duration-ms="459" status="PASS">
+        <test-method signature="quantityIncreaseCheck()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:49:05 IST" name="quantityIncreaseCheck" finished-at="2023-10-24T19:49:16 IST" duration-ms="11301" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePageLogoPresent -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:38 IST" name="afterMethod" finished-at="2023-10-24T12:33:38 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- quantityIncreaseCheck -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:49:16 IST" name="afterMethod" finished-at="2023-10-24T19:49:16 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homePageLogoPresent status=SUCCESS method=HomePageTest.homePageLogoPresent()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf] output={null}]]]>
+                <![CDATA[[TestResult name=quantityIncreaseCheck status=SUCCESS method=ShoppingCartTest.quantityIncreaseCheck()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:38 IST" name="urlLoading" finished-at="2023-10-24T12:33:42 IST" duration-ms="4418" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLoading -->
-        <test-method signature="newsletterCheck()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:42 IST" name="newsletterCheck" finished-at="2023-10-24T12:33:44 IST" duration-ms="1639" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Subscription success] but found [404 Not Found]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Subscription success] but found [404 Not Found]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at test.store.sprig.HomePageTest.newsletterCheck(HomePageTest.java:68)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newsletterCheck -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:44 IST" name="afterMethod" finished-at="2023-10-24T12:33:44 IST" duration-ms="153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=newsletterCheck status=FAILURE method=HomePageTest.newsletterCheck()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:44 IST" name="urlLoading" finished-at="2023-10-24T12:33:48 IST" duration-ms="4211" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLoading -->
-        <test-method signature="searchIcon()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:48 IST" name="searchIcon" finished-at="2023-10-24T12:33:54 IST" duration-ms="5971" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchIcon -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:54 IST" name="afterMethod" finished-at="2023-10-24T12:33:54 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchIcon status=SUCCESS method=HomePageTest.searchIcon()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:54 IST" name="urlLoading" finished-at="2023-10-24T12:33:59 IST" duration-ms="5189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLoading -->
-        <test-method signature="store()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:59 IST" name="store" finished-at="2023-10-24T12:34:02 IST" duration-ms="3187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- store -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:34:02 IST" name="afterMethod" finished-at="2023-10-24T12:34:02 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=store status=SUCCESS method=HomePageTest.store()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:34:02 IST" name="tearDown" finished-at="2023-10-24T12:34:03 IST" duration-ms="713" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.store.sprig.ShoppingCartTest@7c7b252e]" started-at="2023-10-24T19:49:16 IST" name="tearDown" finished-at="2023-10-24T19:49:17 IST" duration-ms="731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.store.sprig.HomePageTest -->
+      </class> <!-- test.store.sprig.ShoppingCartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
