@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="3" failed="6" skipped="0">
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-21T22:53:29 IST" name="Default suite" finished-at="2023-10-21T22:55:38 IST" duration-ms="128695">
+  <suite started-at="2023-10-24T12:32:44 IST" name="Default suite" finished-at="2023-10-24T12:34:03 IST" duration-ms="78677">
     <groups>
     </groups>
-    <test started-at="2023-10-21T22:53:29 IST" name="Default test" finished-at="2023-10-21T22:55:38 IST" duration-ms="128695">
-      <class name="test.store.sprig.CreateLoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:53:29 IST" name="setUp" finished-at="2023-10-21T22:53:33 IST" duration-ms="3810" status="PASS">
+    <test started-at="2023-10-24T12:32:44 IST" name="Default test" finished-at="2023-10-24T12:34:03 IST" duration-ms="78677">
+      <class name="test.store.sprig.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:32:45 IST" name="setUp" finished-at="2023-10-24T12:32:49 IST" duration-ms="4559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:53:33 IST" name="urlLoading" finished-at="2023-10-21T22:53:39 IST" duration-ms="6318" status="PASS">
+        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:32:49 IST" name="urlLoading" finished-at="2023-10-24T12:32:57 IST" duration-ms="7654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLoading -->
-        <test-method signature="createAnAccount()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:53:39 IST" name="createAnAccount" finished-at="2023-10-21T22:53:55 IST" duration-ms="15676" status="FAIL">
+        <test-method signature="addToCart()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:32:57 IST" name="addToCart" finished-at="2023-10-24T12:33:23 IST" duration-ms="26048" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Account - Sprig] but found [Sprig Premium Mobile Accessories.]]]>
+              <![CDATA[expected [Checkout - Sprig] but found [checkout]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Account - Sprig] but found [Sprig Premium Mobile Accessories.]
+              <![CDATA[java.lang.AssertionError: expected [Checkout - Sprig] but found [checkout]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at test.store.sprig.CreateLoginPageTest.createAnAccount(CreateLoginPageTest.java:30)
+at test.store.sprig.HomePageTest.addToCart(HomePageTest.java:81)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,36 +62,74 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createAnAccount -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:53:55 IST" name="afterMethod" finished-at="2023-10-21T22:53:56 IST" duration-ms="678" status="PASS">
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:23 IST" name="afterMethod" finished-at="2023-10-24T12:33:23 IST" duration-ms="235" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createAnAccount status=FAILURE method=CreateLoginPageTest.createAnAccount()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419] output={null}]]]>
+                <![CDATA[[TestResult name=addToCart status=FAILURE method=HomePageTest.addToCart()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:53:56 IST" name="urlLoading" finished-at="2023-10-21T22:54:00 IST" duration-ms="3922" status="PASS">
+        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:23 IST" name="urlLoading" finished-at="2023-10-24T12:33:27 IST" duration-ms="3671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLoading -->
-        <test-method signature="createAnAccountButtontextValidation()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:00 IST" name="createAnAccountButtontextValidation" finished-at="2023-10-21T22:54:04 IST" duration-ms="3919" status="FAIL">
+        <test-method signature="category()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:27 IST" name="category" finished-at="2023-10-24T12:33:33 IST" duration-ms="6161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- category -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:33 IST" name="afterMethod" finished-at="2023-10-24T12:33:33 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=category status=SUCCESS method=HomePageTest.category()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:33 IST" name="urlLoading" finished-at="2023-10-24T12:33:37 IST" duration-ms="4288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLoading -->
+        <test-method signature="homePageLogoPresent()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:37 IST" name="homePageLogoPresent" finished-at="2023-10-24T12:33:38 IST" duration-ms="459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageLogoPresent -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:38 IST" name="afterMethod" finished-at="2023-10-24T12:33:38 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homePageLogoPresent status=SUCCESS method=HomePageTest.homePageLogoPresent()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:38 IST" name="urlLoading" finished-at="2023-10-24T12:33:42 IST" duration-ms="4418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLoading -->
+        <test-method signature="newsletterCheck()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:42 IST" name="newsletterCheck" finished-at="2023-10-24T12:33:44 IST" duration-ms="1639" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Create an Account] but found [LOG IN]]]>
+              <![CDATA[expected [Subscription success] but found [404 Not Found]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Create an Account] but found [LOG IN]
+              <![CDATA[java.lang.AssertionError: expected [Subscription success] but found [404 Not Found]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at test.store.sprig.CreateLoginPageTest.createAnAccountButtontextValidation(CreateLoginPageTest.java:147)
+at test.store.sprig.HomePageTest.newsletterCheck(HomePageTest.java:68)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,332 +163,61 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createAnAccountButtontextValidation -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:04 IST" name="afterMethod" finished-at="2023-10-21T22:54:04 IST" duration-ms="149" status="PASS">
+        </test-method> <!-- newsletterCheck -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:44 IST" name="afterMethod" finished-at="2023-10-24T12:33:44 IST" duration-ms="153" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createAnAccountButtontextValidation status=FAILURE method=CreateLoginPageTest.createAnAccountButtontextValidation()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419] output={null}]]]>
+                <![CDATA[[TestResult name=newsletterCheck status=FAILURE method=HomePageTest.newsletterCheck()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:04 IST" name="urlLoading" finished-at="2023-10-21T22:54:08 IST" duration-ms="3787" status="PASS">
+        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:44 IST" name="urlLoading" finished-at="2023-10-24T12:33:48 IST" duration-ms="4211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLoading -->
-        <test-method signature="forgotPassword()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:08 IST" name="forgotPassword" finished-at="2023-10-21T22:54:14 IST" duration-ms="5903" status="PASS">
+        <test-method signature="searchIcon()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:48 IST" name="searchIcon" finished-at="2023-10-24T12:33:54 IST" duration-ms="5971" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forgotPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:14 IST" name="afterMethod" finished-at="2023-10-21T22:54:14 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- searchIcon -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:54 IST" name="afterMethod" finished-at="2023-10-24T12:33:54 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=forgotPassword status=SUCCESS method=CreateLoginPageTest.forgotPassword()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419] output={null}]]]>
+                <![CDATA[[TestResult name=searchIcon status=SUCCESS method=HomePageTest.searchIcon()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:14 IST" name="urlLoading" finished-at="2023-10-21T22:54:18 IST" duration-ms="4739" status="PASS">
+        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:54 IST" name="urlLoading" finished-at="2023-10-24T12:33:59 IST" duration-ms="5189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLoading -->
-        <test-method signature="loginButtontextValidation()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:18 IST" name="loginButtontextValidation" finished-at="2023-10-21T22:54:26 IST" duration-ms="7847" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Log in] but found [LOG IN]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Log in] but found [LOG IN]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at test.store.sprig.CreateLoginPageTest.loginButtontextValidation(CreateLoginPageTest.java:132)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="store()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:33:59 IST" name="store" finished-at="2023-10-24T12:34:02 IST" duration-ms="3187" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginButtontextValidation -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:26 IST" name="afterMethod" finished-at="2023-10-21T22:54:26 IST" duration-ms="173" status="PASS">
+        </test-method> <!-- store -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:34:02 IST" name="afterMethod" finished-at="2023-10-24T12:34:02 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginButtontextValidation status=FAILURE method=CreateLoginPageTest.loginButtontextValidation()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419] output={null}]]]>
+                <![CDATA[[TestResult name=store status=SUCCESS method=HomePageTest.store()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:26 IST" name="urlLoading" finished-at="2023-10-21T22:54:31 IST" duration-ms="4636" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLoading -->
-        <test-method signature="loginLinkValidation()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:31 IST" name="loginLinkValidation" finished-at="2023-10-21T22:54:32 IST" duration-ms="1278" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginLinkValidation -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:32 IST" name="afterMethod" finished-at="2023-10-21T22:54:32 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginLinkValidation status=SUCCESS method=CreateLoginPageTest.loginLinkValidation()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:32 IST" name="urlLoading" finished-at="2023-10-21T22:54:36 IST" duration-ms="4213" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLoading -->
-        <test-method signature="loginTestUsingInvalidCred()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:36 IST" name="loginTestUsingInvalidCred" finished-at="2023-10-21T22:54:52 IST" duration-ms="15437" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTestUsingInvalidCred -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:52 IST" name="afterMethod" finished-at="2023-10-21T22:54:52 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginTestUsingInvalidCred status=SUCCESS method=CreateLoginPageTest.loginTestUsingInvalidCred()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:52 IST" name="urlLoading" finished-at="2023-10-21T22:54:57 IST" duration-ms="4977" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLoading -->
-        <test-method signature="loginTestUsingValidCred()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:54:57 IST" name="loginTestUsingValidCred" finished-at="2023-10-21T22:55:04 IST" duration-ms="6675" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [My account] but found [Sprig - Checkout]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [My account] but found [Sprig - Checkout]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at test.store.sprig.CreateLoginPageTest.loginTestUsingValidCred(CreateLoginPageTest.java:65)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTestUsingValidCred -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:55:04 IST" name="afterMethod" finished-at="2023-10-21T22:55:04 IST" duration-ms="144" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginTestUsingValidCred status=FAILURE method=CreateLoginPageTest.loginTestUsingValidCred()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:55:04 IST" name="urlLoading" finished-at="2023-10-21T22:55:09 IST" duration-ms="5051" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLoading -->
-        <test-method signature="signinOptionsLinkValidation()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:55:09 IST" name="signinOptionsLinkValidation" finished-at="2023-10-21T22:55:25 IST" duration-ms="15974" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Lists differ at element [0]: https://social-login.oxiapps.com/auth/facebook?shop=sprigstore-com.myshopify.com&parenturl=https://sprig.store/account/register != https://social-login.oxiapps.com/auth/facebook?shop=sprigstore-com.myshopify.com&parenturl=https://sprig.store/account/login?checkout_url=%2F30943714%2Fcheckouts%2F7c8c7236b5bf4beb7e1aeb9c95f86a59&osl_checkout_url=/30943714/checkouts/7c8c7236b5bf4beb7e1aeb9c95f86a59 expected [https://social-login.oxiapps.com/auth/facebook?shop=sprigstore-com.myshopify.com&parenturl=https://sprig.store/account/register] but found [https://social-login.oxiapps.com/auth/facebook?shop=sprigstore-com.myshopify.com&parenturl=https://sprig.store/account/login?checkout_url=%2F30943714%2Fcheckouts%2F7c8c7236b5bf4beb7e1aeb9c95f86a59&osl_checkout_url=/30943714/checkouts/7c8c7236b5bf4beb7e1aeb9c95f86a59]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Lists differ at element [0]: https://social-login.oxiapps.com/auth/facebook?shop=sprigstore-com.myshopify.com&parenturl=https://sprig.store/account/register != https://social-login.oxiapps.com/auth/facebook?shop=sprigstore-com.myshopify.com&parenturl=https://sprig.store/account/login?checkout_url=%2F30943714%2Fcheckouts%2F7c8c7236b5bf4beb7e1aeb9c95f86a59&osl_checkout_url=/30943714/checkouts/7c8c7236b5bf4beb7e1aeb9c95f86a59 expected [https://social-login.oxiapps.com/auth/facebook?shop=sprigstore-com.myshopify.com&parenturl=https://sprig.store/account/register] but found [https://social-login.oxiapps.com/auth/facebook?shop=sprigstore-com.myshopify.com&parenturl=https://sprig.store/account/login?checkout_url=%2F30943714%2Fcheckouts%2F7c8c7236b5bf4beb7e1aeb9c95f86a59&osl_checkout_url=/30943714/checkouts/7c8c7236b5bf4beb7e1aeb9c95f86a59]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:1644)
-at org.testng.Assert.assertEquals(Assert.java:1606)
-at page.store.sprig.CreateLoginPage.signLinksValid(CreateLoginPage.java:108)
-at test.store.sprig.CreateLoginPageTest.signinOptionsLinkValidation(CreateLoginPageTest.java:177)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signinOptionsLinkValidation -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:55:25 IST" name="afterMethod" finished-at="2023-10-21T22:55:25 IST" duration-ms="174" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signinOptionsLinkValidation status=FAILURE method=CreateLoginPageTest.signinOptionsLinkValidation()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="urlLoading()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:55:25 IST" name="urlLoading" finished-at="2023-10-21T22:55:29 IST" duration-ms="3878" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLoading -->
-        <test-method signature="submitButtontextValidation()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:55:29 IST" name="submitButtontextValidation" finished-at="2023-10-21T22:55:35 IST" duration-ms="5756" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Submit] but found [SUBMIT]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Submit] but found [SUBMIT]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at test.store.sprig.CreateLoginPageTest.submitButtontextValidation(CreateLoginPageTest.java:165)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitButtontextValidation -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:55:35 IST" name="afterMethod" finished-at="2023-10-21T22:55:36 IST" duration-ms="1738" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=submitButtontextValidation status=FAILURE method=CreateLoginPageTest.submitButtontextValidation()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.store.sprig.CreateLoginPageTest@1aafa419]" started-at="2023-10-21T22:55:36 IST" name="tearDown" finished-at="2023-10-21T22:55:38 IST" duration-ms="1678" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.store.sprig.HomePageTest@4c583ecf]" started-at="2023-10-24T12:34:02 IST" name="tearDown" finished-at="2023-10-24T12:34:03 IST" duration-ms="713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.store.sprig.CreateLoginPageTest -->
+      </class> <!-- test.store.sprig.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

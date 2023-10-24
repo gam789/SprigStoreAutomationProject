@@ -31,7 +31,7 @@ public class BaseClass {
 	@BeforeTest
 	public void setUp()
 	{	
-		reporter = new ExtentHtmlReporter("./CreateAndLoginReportFolder/Createloginreport.html");
+		reporter = new ExtentHtmlReporter("./HomepageReportFolder/Homepagereport.html");
 			reporter.config().setDocumentTitle("Sprig Automation Report");
 			reporter.config().setReportName("Functional Test");
 			reporter.config().setTheme(Theme.DARK);
@@ -100,7 +100,7 @@ public class BaseClass {
 	@AfterTest
 	public void tearDown() {
 		extent.flush();
-		driver.quit();
+		//driver.quit();
 	}
 	
 }

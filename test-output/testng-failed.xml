@@ -3,20 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.store.sprig.CreateLoginPageTest">
+      <class name="test.store.sprig.HomePageTest">
         <methods>
           <include name="urlLoading"/>
-          <include name="loginButtontextValidation"/>
-          <include name="submitButtontextValidation"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="afterMethod"/>
-          <include name="createAnAccount"/>
-          <include name="createAnAccountButtontextValidation"/>
-          <include name="signinOptionsLinkValidation"/>
-          <include name="loginTestUsingValidCred"/>
+          <include name="newsletterCheck"/>
+          <include name="addToCart"/>
         </methods>
-      </class> <!-- test.store.sprig.CreateLoginPageTest -->
+      </class> <!-- test.store.sprig.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
